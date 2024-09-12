@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  font-family: "Abril Fatface", serif;
+  background-color: #121213;
+}
+
+.banner{
+  background-image: url(../assets/scan0083-ABIGAILLE.jpg);
+  min-height: 700px;
+  
+}
+.fusion-title-sc-wrapper{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.img-hight{
+  max-height: 500px;
+}
+.text-b{
+  border: 10px solid white;
+}
+
+
+
+
+
+
+
+
+
+.aWrap {
+	.svg-inline--fa {
+		color: $color_1 !important;
+	}
+	font-family: $font-family_1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 400px;
+  width: 100%;
+	padding: 10px 15px;
+	margin: 5px 0;
+	border-radius: 10px;
+	background: #222;
+	gap: 10px;
+	box-sizing: border-box;
+	* {
+		box-sizing: border-box;
+	}
+	input[type="range"] {
+		appearance: none;
+		border: none;
+		outline: none;
+		box-shadow: none;
+		max-width: 125px;
+    width: 100%;
+		padding: 0;
+		margin: 0;
+		background: 0;
+
+    @media (max-width:1110px) {
+      max-width: 88px;
+    }
+		&::-webkit-slider-thumb {
+			appearance: none;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			border: 0;
+			background: #767676;
+			position: relative;
+			cursor: pointer;
+			margin-top: -5px;
+		}
+		&::-webkit-slider-runnable-track {
+			background: transparent;
+			height: 6px;
+			border-radius: 10px;
+		}
+		&::-moz-range-thumb {
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			border: 0;
+			background: #fff;
+			position: relative;
+			cursor: pointer;
+			margin-top: -5px;
+		}
+	}
+}
+.aPlay {
+	padding: 0;
+	margin: 0;
+	background: 0;
+	border: 0;
+	cursor: pointer;
+}
+.aCron {
+	font-size: 14px;
+	color: #fff;
+	margin: 0 10px;
+  display: flex;
+}
+.range {
+	position: relative;
+	display: flex;
+	align-items: center;
+	input {
+		position: relative;
+		z-index: 1;
+	}
+	.change-range {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 6px;
+		width: 0px;
+		background-color: #fff;
+		border-radius: 10px 0 0 10px;
+	}
+}
+.range-volume {
+	position: relative;
+	display: flex;
+	align-items: center;
+	input {
+		position: relative;
+		z-index: 1;
+	}
+	.change-range {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 6px;
+		width: 0px;
+		background-color:#fff;
+		border-radius: 10px 0 0 10px;
+		height: 10px;
+		width: 95%;
+	}
+	.under-ranger {
+		height: 10px;
+	}
+}
+.under-ranger {
+	position: absolute;
+	left: 0;
+	top: -1;
+	height: 10px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.aVolIco {
+	margin: 0 10px;
+	cursor: pointer;
+  color: #fff;
+}
+.aPlayIco{
+  color: #fff;
+}
+.aVolume {
+	width: 70px !important;
+
+  @media (max-width:1110px) {
+    max-width: 50px !important;
+  }
+}
+.aVolume {
+	&::-webkit-slider-runnable-track {
+		height: 10px !important;
+	}
+	&::-webkit-slider-thumb {
+		margin-top: -3px !important;
+	}
+	&::-moz-range-thumb {
+		margin-top: -3px !important;
+	}
+}
+.volume-container {
+	display: flex;
+	align-items: center;
+}
+
+
+
+	@media (max-width:767px) {
+		.sg-content{
+		padding-top: 25px !important;
+		padding-bottom: 25px !important;
+	}
+}
+
+	@media (max-width:991px) {
+		.banner-text{
+		font-size: 60px;
+	}
+}
+	@media (max-width:765px) {
+		.banner-text{
+		font-size: 50px;
+	}
+}
+	@media (max-width:765px) {
+		.fusion-title-sc-wrapper{
+		font-size: 20px;
+	}
+}
